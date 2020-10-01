@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iKupi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="categories" class="container container-1"></div>
+        <div id="products" class="container container-2"></div>
+        <div id="product_info" class="container container-3"></div>
+        <form name="purchaseForm" class="form-puchase">
+            <button type="button" id="closeBtn" class="close-button"></button>
+            <div>Your name: 
+                <input type="text" name="userName" placeholder="Name, surname">
+                <div class="error-message">Please fill in this field</div>
+            </div>
+            <div>
+                Your city:
+                <select name="city">
+                    <option value="" disabled selected>--Choose from the list--</option>
+                    <option value="odesa">Odessa</option>
+                    <option value="kyiv">Kyiv</option>
+                    <option value="lviv">Lviv</option>
+                    <option value="kharkiv">Kharkiv</option>
+                    <option value="dnipro">Dnipro</option>
+                </select>
+                <div class="error-message">Please fill in this field</div>
+            </div>
+            <div>'Nova Poshta' branch #: 
+                <input type="number" name="postNumber" min="1">
+                <div class="error-message">Please fill in this field</div>
+            </div>
+            <div>
+                <div>Payment option:</p>
+                <input type="radio" name="payment" value="cash">Cash on delivery
+                <input type="radio" name="payment" value="card">Bank card
+                <div class="error-message">Please fill in this field</div>
+            </div>
+            <div>Amount of items to be bought: 
+                <input type="number" name="amount" min="1">
+                <div class="error-message">Please fill in this field</div>
+            </div>
+            <div>
+                <p>Comment for the purchase: </p>
+                <textarea name="comment" cols="50" rows="3">Your comment</textarea>
+                <div class="error-message">Please fill in this field</div>
+            </div>
+            <button type="button" id="formBtn">Send</button>
+        </form>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

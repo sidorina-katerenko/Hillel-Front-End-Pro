@@ -1,0 +1,24 @@
+#wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-button {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    background-color: #c7bfbf;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.slider-button-prev {
+    left: 0;
+}
+
+.slider-button-next {
+    right: 0;
+}

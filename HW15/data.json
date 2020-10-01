@@ -1,0 +1,25 @@
+{
+	"statuses": ["open", "in progress", "done"],
+	"priorities": ["low", "minor", "major", "high"],
+	"tasks": [
+		{
+			"id": 1,
+			"name": "Make a list",
+			"status": "done",
+			"priority": "high"
+		},
+		{
+			"id": 2,
+			"name": "Add a few tasks",
+			"status": "done",
+			"priority": "major"
+		},
+		{
+			"id": 3,
+			"name": "Make sure those are saved in the localStorage",
+			"status": "in progress",
+			"priority": "minor"
+		}
+	]
+}
+
